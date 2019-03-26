@@ -31,7 +31,7 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Hello Hooks</h1>
-			<Matrix />
+			{/* <Matrix /> */}
 			<div className="form">
 				<input value={userQuery} onChange={updateUserQuery} onKeyPress={handleKeyPress} />
 				<button onClick={searchQuery}>Search</button>

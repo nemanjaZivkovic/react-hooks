@@ -11,12 +11,10 @@ function Matrix() {
 
 	useEffect(
 		() => {
-			console.log('Effect Matrix');
 			const interval = setInterval(() => {
 				setIndex((curIndex) => setIndex((curIndex + 1) % MATRIX.length));
 			}, 1000 / fps);
 			return () => {
-				console.log('Clearing Matrix interval');
 				clearInterval(interval);
 			};
 		},

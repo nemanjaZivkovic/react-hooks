@@ -5,7 +5,7 @@ export const useFetch = (url, initialValue, callback) => {
 
 	useEffect(() => {
 		fetch(url).then((response) => response.json()).then((json) => {
-			console.log(`Fetched data from ${url}`, json);
+			//console.log(`Fetched data from ${url}`, json);
             setResult(json);
             if (typeof callback === 'function') callback(json);
 		});
